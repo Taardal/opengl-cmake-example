@@ -6,9 +6,9 @@
 const unsigned int WIDTH = 800;
 const unsigned int HEIGHT = 600;
 
-const unsigned int NUMBER_OF_VERTICES = 6;
+const unsigned int NUMBER_OF_VERTICES = 3;
 const unsigned int VERTEX_SIZE = 2;
-const float VERTICES[NUMBER_OF_VERTICES] = {
+const float VERTICES[NUMBER_OF_VERTICES * VERTEX_SIZE] = {
         -0.5f, -0.5f,
         0.0f, 0.5f,
         0.5f, -0.5f
