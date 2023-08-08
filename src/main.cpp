@@ -103,6 +103,7 @@ int main() {
 				gl_Position = vec4(in_position, 1.0);
 			}
 		)";
+
     std::string fragmentSource = R"(
 			#version 330 core
 
@@ -117,8 +118,9 @@ int main() {
 				out_color = in_vertex.color;
 			}
 		)";
-    Shader *shader = new Shader(vertexSource, fragmentSource);
-    shader->Bind();
+        
+    Shader shader(vertexSource, fragmentSource);
+    shader.Bind();
 
     glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
 
